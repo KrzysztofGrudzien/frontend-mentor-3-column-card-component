@@ -62,8 +62,20 @@ img {
 }
 
 .card {
-    border-radius: var(--radius-8);
     padding: 5rem;
+    width: 100%;
+}
+
+.card--primary {
+    background-color: var(--color-primary);
+}
+
+.card--secondary {
+    background-color: var(--color-secondary);
+}
+
+.card--tertiary {
+    background-color: var(--color-secondary-dark);
 }
 
 .card__title {
@@ -115,6 +127,18 @@ img {
         grid-template-columns: 1fr;
         width: 100%;
     }
+
+    .card--primary {
+        border-top-left-radius: var(--radius-8);
+        border-top-right-radius: var(--radius-8);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .card--tertiary {
+        border-bottom-left-radius: var(--radius-8);
+        border-bottom-right-radius: var(--radius-8);
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -124,23 +148,17 @@ img {
         width: 920px;
     }
 
+    .card--primary {
+        border-top-left-radius: var(--radius-8);
+        border-bottom-left-radius: var(--radius-8);
+    }
+
+    .card--tertiary {
+        border-top-right-radius: var(--radius-8);
+        border-bottom-right-radius: var(--radius-8);
+    }
+
     .card__link {
         margin-top: 8rem;
     }
-}
-
-.card {
-    width: 100%;
-}
-
-.card--primary {
-    background-color: var(--color-primary);
-}
-
-.card--secondary {
-    background-color: var(--color-secondary);
-}
-
-.card--tertiary {
-    background-color: var(--color-secondary-dark);
 }
