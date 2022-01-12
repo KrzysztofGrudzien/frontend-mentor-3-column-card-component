@@ -123,6 +123,10 @@ img {
         grid-template-columns: repeat(3, 1fr);
         width: 920px;
     }
+
+    .card__link {
+        margin-top: 8rem;
+    }
 }
 
 .card {
